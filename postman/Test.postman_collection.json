@@ -1,0 +1,770 @@
+{
+	"info": {
+		"_postman_id": "973cc890-221b-4996-9b9a-e8abcea6d233",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4249935",
+		"_collection_link": "https://bancomercio-507051.postman.co/workspace/Local~946eb422-0967-4347-a0d5-41f795a87e08/collection/4249935-973cc890-221b-4996-9b9a-e8abcea6d233?action=share&source=collection_link&creator=4249935"
+	},
+	"item": [
+		{
+			"name": "Curso",
+			"item": [
+				{
+					"name": "Listar Cursos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNzM3OSwiaWF0IjoxNzMwNjA2NTc5LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.FfUYcmoUQM6e46YCm6WfwlLOFij-x1_EyLx0NLPsRuTWEmafpOYwd_Er8tFm8PNou6HHnq8LfNPPLGiU7AmQMw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/curso/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"curso",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Curso x Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDMzNzcyOCwiaWF0IjoxNzMwMzI2OTI4LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hlEZJL3mVBPM18VhiG9ZfQVxHpubo2enJNK5cT8lJaE99TqULRDnFMN2Hwne_RmZHiv6Sp6ieP3Y4x9tDi3C-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/curso/getCurso/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"curso",
+								"getCurso",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivar Curso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDU2MjU0NSwiaWF0IjoxNzMwNTUxNzQ1LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.ise4mHNzhF8EPX1ORWzQERYzX1txqfwKM-QItO9K0QBdoTrQpAn31tOHInr3msWGFBFJ-goAz1ybAgCbx2JNPg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/curso/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"curso",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Curso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDMzNzcyOCwiaWF0IjoxNzMwMzI2OTI4LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hlEZJL3mVBPM18VhiG9ZfQVxHpubo2enJNK5cT8lJaE99TqULRDnFMN2Hwne_RmZHiv6Sp6ieP3Y4x9tDi3C-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"CURSO TEST 2\",\r\n    \"ciclo\":1,\r\n    \"carrera\": \"CIENCIAS APLICADAS\",\r\n    \"anio\":2023,\r\n    \"estado\":\"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/curso/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"curso",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Curso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDMzNzcyOCwiaWF0IjoxNzMwMzI2OTI4LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hlEZJL3mVBPM18VhiG9ZfQVxHpubo2enJNK5cT8lJaE99TqULRDnFMN2Hwne_RmZHiv6Sp6ieP3Y4x9tDi3C-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"CURSO TEST UPDATE 1\",\r\n    \"ciclo\":1,\r\n    \"carrera\": \"CIENCIAS APLICADAS UPDATE\",\r\n    \"anio\":2023,\r\n    \"estado\":\"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/curso/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"curso",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Matricula",
+			"item": [
+				{
+					"name": "Obtener Cursos x Alumno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNDU4NCwiaWF0IjoxNzMwNjAzNzg0LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hGBxy8TdT8uoT547IE7O-xWAljVyBHiwkRJ-1psnLmd_Y4oS-0wiTtn17qCzGKCYX1w0bAFSWqDNXY1Rwdvk3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/matricula/getCursosMatriculados/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"matricula",
+								"getCursosMatriculados",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Matricula x Alumno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNDU4NCwiaWF0IjoxNzMwNjAzNzg0LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hGBxy8TdT8uoT547IE7O-xWAljVyBHiwkRJ-1psnLmd_Y4oS-0wiTtn17qCzGKCYX1w0bAFSWqDNXY1Rwdvk3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/matricula/getCursosMatriculados/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"matricula",
+								"getCursosMatriculados",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Matricula",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNDU4NCwiaWF0IjoxNzMwNjAzNzg0LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hGBxy8TdT8uoT547IE7O-xWAljVyBHiwkRJ-1psnLmd_Y4oS-0wiTtn17qCzGKCYX1w0bAFSWqDNXY1Rwdvk3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idAlumno\": 1,\r\n    \"ciclo\":1,\r\n    \"descripcion\": \"MATRICULA SEMESTRE 2024-II\",\r\n    \"anio\":2024,\r\n    \"idCarrera\":1,\r\n    \"estado\":\"ACTIVO\",\r\n    \"detalleMatricula\": [\r\n        {\r\n            \"idCurso\": 1,\r\n            \"estado\": \"ACTIVO\"\r\n        },\r\n        {\r\n            \"idCurso\": 2,\r\n            \"estado\": \"ACTIVO\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/matricula/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"matricula",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evaluacion",
+			"item": [
+				{
+					"name": "Obtener Evaluacion - Pendiente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNDU4NCwiaWF0IjoxNzMwNjAzNzg0LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hGBxy8TdT8uoT547IE7O-xWAljVyBHiwkRJ-1psnLmd_Y4oS-0wiTtn17qCzGKCYX1w0bAFSWqDNXY1Rwdvk3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/evaluacion/getEvaluacion/1/curso/1/leccion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"evaluacion",
+								"getEvaluacion",
+								"1",
+								"curso",
+								"1",
+								"leccion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Matricula x Alumno",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Matricula",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leccion",
+			"item": [
+				{
+					"name": "Listar Lecciones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDU2NzM3OSwiaWF0IjoxNzMwNTU2NTc5LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.VmlEM3VysTnwktYUpsll9WfXdpcIjqGHhcrYHssULd5ZNmPyBza8m_NCd_1trNJE0a3xmOcvlfjprpfaDYv-Jw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/leccion/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"leccion",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Leccion x Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDU2NzM3OSwiaWF0IjoxNzMwNTU2NTc5LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.VmlEM3VysTnwktYUpsll9WfXdpcIjqGHhcrYHssULd5ZNmPyBza8m_NCd_1trNJE0a3xmOcvlfjprpfaDYv-Jw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/leccion/getLeccion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"leccion",
+								"getLeccion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivar Leccion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDU2NzM3OSwiaWF0IjoxNzMwNTU2NTc5LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.VmlEM3VysTnwktYUpsll9WfXdpcIjqGHhcrYHssULd5ZNmPyBza8m_NCd_1trNJE0a3xmOcvlfjprpfaDYv-Jw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/leccion/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"leccion",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Leccion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDMzNzcyOCwiaWF0IjoxNzMwMzI2OTI4LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hlEZJL3mVBPM18VhiG9ZfQVxHpubo2enJNK5cT8lJaE99TqULRDnFMN2Hwne_RmZHiv6Sp6ieP3Y4x9tDi3C-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"LECCION 3 CURSO 2\",\r\n    \"idCurso\":2,\r\n    \"umbral\": 15,\r\n    \"estado\":\"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/leccion/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"leccion",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Leccion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDMzNzcyOCwiaWF0IjoxNzMwMzI2OTI4LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hlEZJL3mVBPM18VhiG9ZfQVxHpubo2enJNK5cT8lJaE99TqULRDnFMN2Hwne_RmZHiv6Sp6ieP3Y4x9tDi3C-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCurso\": 1,\r\n    \"nombre\": \"LECCION 2 UPDATE CURSO 1\",\r\n    \"umbral\": 15,\r\n    \"estado\": \"ACTIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/leccion/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"leccion",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Preguntas",
+			"item": [
+				{
+					"name": "Listar Preguntas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNDU4NCwiaWF0IjoxNzMwNjAzNzg0LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hGBxy8TdT8uoT547IE7O-xWAljVyBHiwkRJ-1psnLmd_Y4oS-0wiTtn17qCzGKCYX1w0bAFSWqDNXY1Rwdvk3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/pregunta/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"pregunta",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Pregunta x Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNDU4NCwiaWF0IjoxNzMwNjAzNzg0LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hGBxy8TdT8uoT547IE7O-xWAljVyBHiwkRJ-1psnLmd_Y4oS-0wiTtn17qCzGKCYX1w0bAFSWqDNXY1Rwdvk3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/pregunta/getPregunta/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"pregunta",
+								"getPregunta",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desactivar Pregunta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDM2MjUzMCwiaWF0IjoxNzMwMzUxNzMwLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.CAP282ZWQUeN4qCgxnWBNPawT1Wa7AzfHiju2oOr6LHfiHxTf_fo8cUt2agkpHSji7HH5uEbIOeC-tqHmDXChQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/pregunta/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"pregunta",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Pregunta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDYxNDU4NCwiaWF0IjoxNzMwNjAzNzg0LCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.hGBxy8TdT8uoT547IE7O-xWAljVyBHiwkRJ-1psnLmd_Y4oS-0wiTtn17qCzGKCYX1w0bAFSWqDNXY1Rwdvk3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"MARCAR VERDADERO O FALSO\",\r\n    \"idLeccion\":3,\r\n    \"tipo\": \"MOONEANSWER\",\r\n    \"puntaje\": 5,\r\n    \"estado\":\"ACTIVO\",\r\n    \"opciones\": [\r\n        {\r\n            \"descripcion\": \"X ES MAYOR QUE 6\",\r\n            \"tipo\": \"MOONEANSWER\",\r\n            \"score\": 2.5,\r\n            \"isCorrectAnswer\": false,\r\n            \"estado\":\"ACTIVO\"\r\n        },\r\n        {\r\n            \"descripcion\": \"JOSE ES PAPA DE LUIS\",\r\n            \"tipo\": \"MOONEANSWER\",\r\n            \"score\": 2.5,\r\n            \"isCorrectAnswer\": true,\r\n            \"estado\":\"ACTIVO\"\r\n        }\r\n        \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/pregunta/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"pregunta",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Pregunta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTczMDM2MjUzMCwiaWF0IjoxNzMwMzUxNzMwLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.CAP282ZWQUeN4qCgxnWBNPawT1Wa7AzfHiju2oOr6LHfiHxTf_fo8cUt2agkpHSji7HH5uEbIOeC-tqHmDXChQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"MARCAR VERDADERO O FALSO LAS SIGUIENTES OPCIONES\",\r\n    \"idLeccion\":2,\r\n    \"tipo\": \"BOOL\",\r\n    \"puntaje\": 5,\r\n    \"estado\":\"ACTIVO\",\r\n    \"opciones\": [\r\n        {\r\n            \"descripcion\": \"EL ARBOL ES AZUL\",\r\n            \"tipo\": \"BOOL\",\r\n            \"score\": 2.5,\r\n            \"isCorrectAnswer\": false,\r\n            \"estado\":\"ACTIVO\"\r\n        },\r\n        {\r\n            \"descripcion\": \"EL MAR ES SALADO\",\r\n            \"tipo\": \"BOOL\",\r\n            \"score\": 2.5,\r\n            \"isCorrectAnswer\": true,\r\n            \"estado\":\"ACTIVO\"\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/pregunta/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"pregunta",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/security/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"security",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
